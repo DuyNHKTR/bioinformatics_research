@@ -22,6 +22,8 @@ Lý do dùng `--prefix` thay vì env toàn cục:
 - dễ xóa hoặc dựng lại;
 - giữ đúng tinh thần cô lập cho từng repo.
 
+Ngoài hai env local đã chạy thật, workspace hiện cũng có thêm bộ `flexible environment specs` trong `envs/` để người khác dựng lại môi trường mà không bị khóa cứng vào đúng máy này.
+
 ## Repo đã clone
 
 Hai repo chính thức đã được clone vào `vendor/` để chạy thử:
