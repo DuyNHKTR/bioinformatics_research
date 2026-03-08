@@ -1,3 +1,5 @@
 node_modules/
 vendor/
+.conda-envs/
+dnabert2_smoke_result.json
 Thumbs.db

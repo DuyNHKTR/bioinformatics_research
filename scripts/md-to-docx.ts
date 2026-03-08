@@ -42,6 +42,7 @@ const markdownFiles = [
   "knowledge-base/topics/prodigal/replication-roadmap.md",
   "knowledge-base/topics/prodigal/phat-trien-va-ung-dung.md",
   "hf-topics/README.md",
+  "hf-topics/execution-status.md",
   "hf-topics/dnabert-2/tong-quan.md",
   "hf-topics/dnabert-2/paper-va-phuong-phap.md",
   "hf-topics/dnabert-2/implementation-va-replication.md",
@@ -50,6 +51,7 @@ const markdownFiles = [
   "hf-topics/gengram/tong-quan.md",
   "hf-topics/gengram/paper-va-phuong-phap.md",
   "hf-topics/gengram/implementation-va-replication.md",
+  "hf-topics/gengram/minimal-replication-plan.md",
   "hf-topics/gengram/ung-dung-va-tiem-nang.md",
   "hf-topics/gengram/nguon.md",
 ];

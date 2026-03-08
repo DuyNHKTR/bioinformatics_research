@@ -12,12 +12,16 @@ Cấu trúc trong nhánh này cố tình tách thành 5 mảnh cho mỗi topic:
 - `ung-dung-va-tiem-nang`: ứng dụng thực tế, giá trị nghiên cứu, và tiềm năng phát triển.
 - `nguon`: danh sách nguồn chính thống.
 
+Ngoài ra còn có:
+
+- `execution-status.md`: nhật ký chạy thực tế cho `DNABERT-2` và `Gengram`, gồm môi trường, bước đã chạy, kết quả, và blocker.
+
 ## Hai topic đã chốt
 
 | Topic | Vai trò trong shortlist | Mức độ phù hợp để đi tiếp |
 | --- | --- | --- |
 | `DNABERT-2` | Phương án cân bằng nhất giữa `popular`, có `paper`, có `repo`, có `model`, và còn đủ thực dụng để làm pilot | Cao |
-| `Gengram` | Hướng mới hơn, giàu tiềm năng hơn, phản ánh làn sóng genomic `foundation model` có bộ nhớ dài hạn | Trung bình đến cao, nhưng rủi ro cao hơn |
+| `Gengram` | Hướng mới hơn, giàu tiềm năng hơn, phản ánh làn sóng genomic `foundation model` có `retrieval` và `memory` cho ngữ cảnh dài | Trung bình đến cao, nhưng rủi ro cao hơn |
 
 ## Cách đọc khuyến nghị
 
@@ -33,11 +37,23 @@ Nếu mục tiêu là đánh giá một hướng mới và có thể có `insane
 1. `gengram/tong-quan.md`
 2. `gengram/paper-va-phuong-phap.md`
 3. `gengram/implementation-va-replication.md`
-4. `gengram/ung-dung-va-tiem-nang.md`
+4. `gengram/minimal-replication-plan.md`
+5. `gengram/ung-dung-va-tiem-nang.md`
 
 ## Nhận định nhanh
 
 - `DNABERT-2` là topic nên đọc trước và cũng là topic dễ chuyển sang pilot hơn.
-- `Gengram` hấp dẫn hơn ở góc độ nghiên cứu mới, nhưng mức không chắc chắn cao hơn vì hệ asset hiện phân tán giữa `paper page`, `model card`, và hệ `Genos`.
+- `Gengram` hấp dẫn hơn ở góc độ nghiên cứu mới, nhưng mức không chắc chắn cao hơn vì cần map giữa `paper`, `model card`, `repo`, và benchmark dataset.
 - Nếu quay lại rubric từ ảnh theo nghĩa chặt nhất là `paper cơ bản + code mở + chạy lại được`, `DNABERT-2` vẫn an toàn hơn `Gengram`.
 - Nếu mục tiêu là đánh giá xu hướng `genomic foundation model` mới trên `Hugging Face`, `Gengram` là case đáng đọc.
+- Với trạng thái hiện tại của workspace, `DNABERT-2` đã đủ mức research để sang pilot; `Gengram` vừa được bổ sung thêm đường `minimal replication`, nhưng vẫn là topic nên đi sau.
+
+## Trạng thái chạy thực tế
+
+Xem `execution-status.md` để biết:
+
+- môi trường `conda` nào đã được tạo;
+- repo nào đã clone;
+- lệnh nào đã chạy thành công;
+- kết quả thực tế của `DNABERT-2`;
+- mức chạy thật hiện đạt được của `Gengram`.
