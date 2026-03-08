@@ -1,0 +1,11 @@
+{
+  "name": "int-7021-research-bundle",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:docx": "bun scripts/md-to-docx.ts"
+  },
+  "dependencies": {
+    "docx": "^9.6.0"
+  }
+}
